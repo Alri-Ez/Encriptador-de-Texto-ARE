@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge 1: Encriptador de texto</title>
+</head>
+<body>
+    <header></header>
+    <main class="principal">
+        <div class="principal_logo">
+            <img class="logo" src="Recursos/Logo.png" alt="Logo de alura Latam">
+        </div>
+        <section class="principal-contenido">
+            <textarea name="campo_cifrar_descifrar" id="campo_cifrar_descifrar" class="principal-campo-escribir" placeholder="Ingresa el texto aquí"></textarea>
+            <div class="principal_contenido_advertenciaboton">
+                <p class="presentacion-advertencia"> <img src="Recursos/bi_exclamation-circle-fill.png" alt="Solo minúsculas y sin acentos" class="presentacion-advertencia-imagen"> Solo letras minúsculas y sin acentos.</p>
+                <div class="principal_contenido_advertenciaboton_botones">
+                    <button style="background-color:#0A3871; color: #FFFFFF;" onclick="cifrar()" name="Cifrar" class="principal-boton">Cifrar</button>
+                    <button style="background-color:#D8DFE8;" onclick="decifrar()" name="Descifrar" class="principal-boton">Descifrar</button>
+                </div>
+            </div>
+        </section>
+        <div class="pricipal-resultado">
+            <div class="resultado-antes" id="resultado-antes">
+                <img class="principal-resultado-muñeco" src="Recursos/Muñeco.png" alt="Dibujo de chico revisando un diamante con una lupa">
+                <div class="principal-resultado-texto" id="principal-resultado-texto">
+                    <p class="principal-resultado-texto-resaltado"><strong class="resaltar-texto">Ningún mensaje fue encontrado</strong></p>
+                    <p class="principal-resultado-texto-normal">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <div class="resultado-despues" id="resultado-despues">
+                <p id="resultado" class="resultado"></p>
+                <button style="background-color:#D8DFE8;" name="Copiar" class="boton-copiar" onclick="copiar()">Copiar</button>                
+            </div>
+        </div>
+    </main>
+    <footer class="pie">
+        <p>2024 Alberto Rivera Enriquez</p>
+        <p>Contacto: <a href="alberto.rivera.en@gmail.com">alberto.rivera.en@gmail.com</a></p>
+        <a href="https://github.com/Alri-Ez">Github</a>       
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
